@@ -42,7 +42,7 @@ from io import TextIOWrapper
 #                 https://github.com/Rapptz/RoboDanny/
 #
 
-description = "Red - A multifunction Discord bot by Twentysix"
+description = "Hafnium, a multipurpose and efficient bot."
 
 
 class Bot(commands.Bot):
@@ -258,7 +258,7 @@ def initialize(bot_class=Bot, formatter_class=Formatter):
         owner = await set_bot_owner()
 
         print("-----------------")
-        print("Red - Discord Bot")
+        print("hafnium server host 10x")
         print("-----------------")
         print(str(bot.user))
         print("\nConnected to:")
@@ -327,8 +327,8 @@ def initialize(bot_class=Bot, formatter_class=Formatter):
         elif isinstance(error, commands.CheckFailure):
             pass
         elif isinstance(error, commands.NoPrivateMessage):
-            await bot.send_message(channel, "That command is not "
-                                            "available in DMs.")
+            await bot.send_message(channel, "You can't slide into"
+                                            "my DMs and enslave me.")
         else:
             bot.logger.exception(type(error).__name__, exc_info=error)
 
